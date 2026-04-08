@@ -37,7 +37,7 @@ from datetime import datetime
 TITRE_JEU      = "📚 BD mystère"   # affiché en haut
 SOUS_TITRE     = "Retrouvez la BD à partir d'un extrait"
 QUESTION_LABEL = "Quel est cette BD ?"     # question posée à l'élève
-LIVRES_PATH    = "livres.xlsx"             # fichier de questions dans CE dépôt
+LIVRES_PATH    = "livres_bd.xlsx"             # fichier de questions dans CE dépôt
 PAGE_ICON      = "📚"
 
 # ══════════════════════════════════════════════════════

@@ -34,9 +34,9 @@ from datetime import datetime
 # CONFIG VERSION — seule section à modifier par dépôt
 # ══════════════════════════════════════════════════════
 
-TITRE_JEU      = "📚 La Première Phrase"   # affiché en haut
-SOUS_TITRE     = "Retrouvez le livre à partir de son incipit"
-QUESTION_LABEL = "Quel est ce livre ?"     # question posée à l'élève
+TITRE_JEU      = "📚 BD mystère"   # affiché en haut
+SOUS_TITRE     = "Retrouvez la BD à partir d'un extrait"
+QUESTION_LABEL = "Quel est cette BD ?"     # question posée à l'élève
 LIVRES_PATH    = "livres.xlsx"             # fichier de questions dans CE dépôt
 PAGE_ICON      = "📚"
 

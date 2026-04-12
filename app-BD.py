@@ -202,13 +202,13 @@ def injecter_css():
     st.markdown("""
        <style>
     @import url('https://fonts.googleapis.com/css2?family=Georgia&family=Helvetica&display=swap');
-
+ 
     /* Fond général */
     .stApp { background-color: #1A1A2E; color: #EAEAEA; }
-
+ 
     /* Masquer le menu hamburger et footer */
     #MainMenu, footer { visibility: hidden; }
-
+ 
     /* Titre principal */
     .titre-jeu {
         font-family: Georgia, serif;
@@ -226,7 +226,7 @@ def injecter_css():
         text-align: center;
         margin-bottom: 1.2em;
     }
-
+ 
     /* Carte phrase */
     .carte-phrase {
         background: #0F3460;
@@ -240,7 +240,7 @@ def injecter_css():
         margin: 1em 0 1.4em 0;
         line-height: 1.6;
     }
-
+ 
     /* Barre de progression */
     .barre-prog {
         background: #3451a1;
@@ -254,11 +254,11 @@ def injecter_css():
         height: 10px;
         transition: width 0.4s;
     }
-
+ 
     /* Feedback bonne/mauvaise réponse */
-    .feedback-ok  { color: #2ECC71; font-weight: bold; font-size: 1.1em; }
-    .feedback-ko  { color: #E74C3C; font-weight: bold; font-size: 1.1em; }
-
+    .feedback-ok  { color: #b8eecf; font-weight: bold; font-size: 1.1em; }
+    .feedback-ko  { color: #c41a07; font-weight: bold; font-size: 1.1em; }
+ 
     /* Score final */
     .score-final {
         background: #16213E;
@@ -272,7 +272,11 @@ def injecter_css():
         color: #EAEAEA;
     }
     .score-pct { color: #8892A4; font-size: 1.1em; }
-
+ 
+    /* Tableau classement */
+    .rang-or    { color: #F5A623; font-weight: bold; }
+    .rang-moi   { background: #16213E; border-radius: 6px; padding: 2px 6px; }
+ 
     /* Info utilisateur */
     .user-badge {
         background: #16213E;
@@ -282,43 +286,43 @@ def injecter_css():
         font-size: 0.95em;
         display: inline-block;
     }
-
-    /* Boutons onglets connexion/inscription — forcer une seule ligne */
+                
+    /* Étiquette du slider */
+    .stSlider label {
+        color: #F5A623 !important;
+        font-weight: bold !important;
+    }
+                
+    /* légende des zones de saisie de la page d'accueil*/
+    .stTextInput label {
+    color: #EAEAEA !important;   
+    font-weight: bold !important;
+    }
+    /* Boutons Streamlit */
     .stButton > button {
         white-space: nowrap !important;
-        background-color: #E94560 !important;
-        color: #2ECC71 !important;
+        background-color: #47c2e4 !important;
+        color: #1d065c !important;
         font-weight: bold !important;
         border: none !important;
         border-radius: 6px !important;
         padding: 0.5em 2em !important;
     }
     .stButton > button:hover {
-        background-color: #c73652 !important;
-        color: #2ECC71 !important;
+        background-color: #47c2e4 !important;
+        color: #1d065c !important;
     }
-
+ 
     /* Inputs */
     .stTextInput > div > div > input {
-        background-color: #0F3460 !important;
-        color: #EAEAEA !important;
+        background-color: #5097ee !important;
+        color: #f1f460 !important;
         border: 1px solid #8892A4 !important;
         border-radius: 6px !important;
     }
-
-    /* Légendes des zones de saisie */
-    .stTextInput label {
-        color: #F5A623 !important;
-        font-weight: bold !important;
-    }
-
-    /* Étiquette du slider */
-    .stSlider label {
-        color: #F5A623 !important;
-        font-weight: bold !important;
-    }
     </style>
     """, unsafe_allow_html=True)
+
 
 # ── Initialisation session ───────────────────────────────────────────
 

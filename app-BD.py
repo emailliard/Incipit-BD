@@ -197,6 +197,7 @@ def infos_joueur(pseudo: str) -> dict:
 
 # ── CSS personnalisé ─────────────────────────────────────────────────
 
+
 def injecter_css():
     st.markdown("""
        <style>
@@ -319,7 +320,6 @@ def injecter_css():
     </style>
     """, unsafe_allow_html=True)
 
-
 # ── Initialisation session ───────────────────────────────────────────
 
 def init_session():
@@ -390,7 +390,7 @@ def page_login():
 
         st.markdown("<div style='text-align:center;color:#8892A4'>── ou ──</div>",
                     unsafe_allow_html=True)
-        if st.button("Jouer en mode invité (sans enregistrement du score)",
+        if st.button("Jouer en mode invité",
                      use_container_width=True):
             st.session_state.joueur = None
             st.session_state.page   = "accueil"
@@ -403,7 +403,7 @@ def page_accueil():
     with col_u:
         st.markdown(f'<span class="user-badge">👤 {nom}</span>', unsafe_allow_html=True)
     with col_c:
-        if st.button("Changer d'utilisateur"):
+        if st.button("Déconnexion"):
             st.session_state.page = "login"
             st.rerun()
 
